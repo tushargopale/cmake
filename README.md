@@ -59,3 +59,45 @@ Now, Why CMake is better?
 * CMake supports out-of-source builds — keeps your source and build files separate.
 * Easy to manage subdirectories, libraries, and modules.
 
+----------------
+Simple cmake code
+----------------
+``` CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)  # Minimum CMake version
+
+project(MyApp)  # Project name
+
+# Add executable from source files
+add_executable(app main.c utils.c)
+```
+
+* Commands to build
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+----------------
+✅ What Each Line Does
+----------------
+```cmake_minimum_required(VERSION 3.10)```: Ensures a minimum version of CMake is used.
+```project(MyApp)```: Names your project.
+```add_executable(app main.c utils.c)```: Tells CMake to compile these files into an executable called app.
+* Optional
+```
+include_directories(include)       # Add include path
+add_compile_options(-Wall -O2)     # Enable warnings and optimization
+```
+
+* ```cmake ..``` -
+    Generates build files (like Makefile) from CMakeLists.txt
+*  ```make``` -
+    Uses that Makefile to compile and link your code
+
+Note- cmake .. does not always generate Makefile. The default is Makefile but you can specify with ```-G``` flag
+```cmake -G "Ninja" ..``` or
+```cmake -G "Visual Studio 17 2022" ..```
+
+----------------
+For a simple project with head files, cpp source files and build executable; see the code section after this point!
