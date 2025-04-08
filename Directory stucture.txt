@@ -1,0 +1,19 @@
+CppSocketProject/
+├── CMakeLists.txt <- root cmake
+├── include/ <- all headers are kept here
+│   ├── client_utils.hpp
+│   └── server_utils.hpp
+├── lib/
+│   └── common/
+│       ├── CMakeLists.txt <- cmake for lib separatly. Its output is accesible to root cmake. This lib is modular and can be ported to other project easily
+│       ├── common.cpp
+│       ├── common.hpp
+│       ├── utils.cpp
+│       └── utils.hpp
+├── src/
+│   ├── client/ <- client app
+│   │   ├── client.cpp
+│   │   └── client_utils.cpp
+│   └── server/ <- server app
+│       ├── server.cpp
+│       └── server_utils.cpp
