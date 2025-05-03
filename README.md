@@ -108,7 +108,7 @@ Execution Commands
 * ```cd build```
 * ```cmake ..```
 * ```make```
-In terminal 1
-* ```./server```
-In terminal 2
-* ```./client```
+* In terminal 1
+```./server```
+* In terminal 2
+```./client```
