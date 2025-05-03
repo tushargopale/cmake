@@ -12,7 +12,7 @@ file(GLOB COMMON_SOURCES
     *.cpp
 )
 
-# Create a static library named 'common' from the source files
+# Create a static library named 'common' from the source files at path lib/common
 add_library(common STATIC ${COMMON_SOURCES})
 
 # Include the current directory so headers like "common.hpp" and "utils.hpp" can be found

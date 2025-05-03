@@ -1,6 +1,12 @@
 #ifndef UTILS_H
 #define UTILS_H
+
+#include <string>
 #include<iostream>
-#include<string>
+
 using namespace std;
-#endif //UTILS_H
+
+string timestamp();
+void log(const string &prefix, const string &msg);
+
+#endif

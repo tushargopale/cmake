@@ -101,3 +101,14 @@ Note- cmake .. does not always generate Makefile. The default is Makefile but yo
 
 ----------------
 For a simple project with head files, cpp source files and build executable; see the code section after this point!
+
+----------------
+Execution Commands
+----------------
+* ```cd build```
+* ```cmake ..```
+* ```make```
+In terminal 1
+* ```./server```
+In terminal 2
+* ```./client```
